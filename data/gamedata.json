@@ -365,7 +365,7 @@
 			"hot-pursuit": {
 				"desc": "Increase movement speed by <span class='skill-highlight'>20%</span> for <span class='skill-highlight'>2</span> seconds when you hit an enemy.",
 				"effect": {
-					"plus-movement-speed-conditional": 20%
+					"plus-movement-speed-conditional": 20
 				}
 			},
 			"archery": {
