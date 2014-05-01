@@ -599,7 +599,7 @@
 		"barbarian": {
 			"bash": {
 				"name": "Bash",
-				"desc": "Brutally smash an enemy for 215% weapon damage.",
+				"desc": "Brutally smash an enemy for <span class='skill-highlight'>215%</span> weapon damage.",
 				"procRate": 1,
 				"effect": {
 					"generate-fury": 6,
@@ -607,19 +607,31 @@
 				}
 			},
 			"bash~a": {
-				"name": "Bash - Onslaught",
-				"desc": "Brutally smash an enemy for 215% weapon damage.",
-				"rune": "Each hit adds 2 reverberations that cause an additional 100% total weapon damage.",
+                "name": "Bash - Clobber",
+				"desc": "Brutally smash an enemy for <span class='skill-highlight'>215%</span> weapon damage.",
+				"rune": "Each hit has a <span class='skill-highlight'>35%</span> chance to Stun the enemy for <span class='skill-highlight'>1.5</span> seconds.",
+				"procRate": 1,
+				"effect": {
+					"generate-fury": 6,
+					"chance-stun": 35,
+					"weapon-damage": 215
+				}
+			},
+			"bash~b": {
+                "name": "Bash - Onslaught",
+				"desc": "Brutally smash an enemy for <span class='skill-highlight'>215%</span> weapon damage.",
+				"rune": "Each hit adds <span class='skill-highlight'>2</span> reverberations that cause an additional <span class='skill-highlight'>100%</span> total weapon damage.",
 				"procRate": 0.333,
 				"effect": {
 					"generate-fury": 6,
 					"weapon-damage": 415
+
 				}
 			},
-			"bash~b": {
+			"bash~c": {
 				"name": "Bash - Punish",
-				"desc": "Brutally smash an enemy for 215% weapon damage.",
-				"rune": "Increase the damage of your skills by 4% for 5 seconds after using Bash. This effect stacks up to 3 times.",
+				"desc": "Brutally smash an enemy for <span class='skill-highlight'>215%</span> weapon damage.",
+				"rune": "Increase the damage of your skills by <span class='skill-highlight'>4%</span> for <span class='skill-highlight'>5</span> seconds after using Bash. This effect stacks up to <span class='skill-highlight'>3</span> times.",
 				"procRate": 1,
 				"effect": {
 					"generate-fury": 6,
@@ -630,21 +642,10 @@
 					"weapon-damage": 215
 				}
 			},
-			"bash~c": {
-				"name": "Bash - Clobber",
-				"desc": "Brutally smash an enemy for 215% weapon damage.",
-				"rune": "Each hit has a 35% chance to Stun the enemy for 1.5 seconds.",
-				"procRate": 1,
-				"effect": {
-					"generate-fury": 6,
-					"chance-stun": 35,
-					"weapon-damage": 215
-				}
-			},
 			"bash~d": {
 				"name": "Bash - Instigation",
-				"desc": "Brutally smash an enemy for 215% weapon damage.",
-				"rune": "Increase Fury generated to 8.",
+				"desc": "Brutally smash an enemy for <span class='skill-highlight'>215%</span> weapon damage.",
+				"rune": "Increase Fury generated to <span class='skill-highlight'>8</span>.",
 				"procRate": 1,
 				"effect": {
 					"generate-fury": 8,
@@ -653,8 +654,8 @@
 			},
 			"bash~e": {
 				"name": "Bash - Pulverize",
-				"desc": "Brutally smash an enemy for 215% weapon damage.",
-				"rune": "Each hit causes a shockwave that deals 70% weapon damage as Fire to enemies in a 26 yard line behind the primary enemy.",
+				"desc": "Brutally smash an enemy for <span class='skill-highlight'>215%</span> weapon damage.",
+				"rune": "Each hit causes a shockwave that deals <span class='skill-highlight'>70%</span> weapon damage as Fire to enemies in a <span class='skill-highlight'>26</span> yard line behind the primary enemy.",
 				"procRate": 0.333,
 				"effect": {
 					"generate-fury": 6,
@@ -663,7 +664,7 @@
 			},
 			"hammer-of-the-ancients": {
 				"name": "Hammer of the Ancients",
-				"desc": "Call forth a massive hammer to smash enemies directly in front of you for 535% weapon damage. Hammer of the Ancients has a 1% increased Critical Hit Chance for every 5 Fury that ya have.",
+				"desc": "Call forth a massive hammer to smash enemies directly in front of you for <span class='skill-highlight'>535%</span> weapon damage. Hammer of the Ancients has a <span class='skill-highlight'>1%</span> increased Critical Hit Chance for every <span class='skill-highlight'>5</span> Fury that you have.",
 				"procRate": 0.667,
 				"effect": {
 					"cost-fury": 20,
@@ -672,9 +673,21 @@
 				}
 			},
 			"hammer-of-the-ancients~a": {
+                "name": "Hammer of the Ancients - Rolling Thunder",
+				"desc": "Call forth a massive hammer to smash enemies directly in front of you for <span class='skill-highlight'>535%</span> weapon damage. Hammer of the Ancients has a <span class='skill-highlight'>1%</span> increased Critical Hit Chance for every <span class='skill-highlight'>5</span> Fury that you have.",
+				"rune": "Create a shockwave that deals <span class='skill-highlight'>505%</span> weapon damage to all enemies within <span class='skill-highlight'>22</span> yards in front of you.",
+				"procRate": 0.4,
+				"effect": {
+					"cost-fury": 20,
+					"plus-critical-hit-this": 5,
+					"weapon-damage": 505
+
+				}
+			},
+			"hammer-of-the-ancients~b": {
 				"name": "Hammer of the Ancients - Smash",
-				"desc": "Call forth a massive hammer to smash enemies directly in front of you for 535% weapon damage. Hammer of the Ancients has a 1% increased Critical Hit Chance for every 5 Fury that ya have.",
-				"rune": "Smash for 640% weapon damage as Fire.",
+				"desc": "Call forth a massive hammer to smash enemies directly in front of you for <span class='skill-highlight'>535%</span> weapon damage. Hammer of the Ancients has a <span class='skill-highlight'>1%</span> increased Critical Hit Chance for every <span class='skill-highlight'>5</span> Fury that you have.",
+				"rune": "Smash for <span class='skill-highlight'>640%</span> weapon damage as Fire.",
 				"procRate": 0.667,
 				"effect": {
 					"cost-fury": 20,
@@ -682,32 +695,10 @@
 					"weapon-damage": 640
 				}
 			},
-			"hammer-of-the-ancients~b": {
-				"name": "Hammer of the Ancients - Rolling Thunder",
-				"desc": "Call forth a massive hammer to smash enemies directly in front of you for 535% weapon damage. Hammer of the Ancients has a 1% increased Critical Hit Chance for every 5 Fury that ya have.",
-				"rune": "Create a shockwave that deals 505% weapon damage to all enemies within 22 yards in front of you.",
-				"procRate": 0.4,
-				"effect": {
-					"cost-fury": 20,
-					"plus-critical-hit-this": 5,
-					"weapon-damage": 505
-				}
-			},
 			"hammer-of-the-ancients~c": {
 				"name": "Hammer of the Ancients - The Devil\"s Anvil",
-				"desc": "Call forth a massive hammer to smash enemies directly in front of you for 535% weapon damage. Hammer of the Ancients has a 1% increased Critical Hit Chance for every 5 Fury that ya have.",
-				"rune": "Each hit creates a tremor at the point of impact for 2 seconds that Slows the movement speed of enemies by 80%",
-				"procRate": 0.08,
-				"effect": {
-					"cost-fury": 20,
-					"weapon-damage": 535,
-					"plus-critical-hit-this": 5
-				}
-			},
-			"hammer-of-the-ancients~d": {
-				"name": "Hammer of the Ancients - Birthright",
-				"desc": "Call forth a massive hammer to smash enemies directly in front of you for 535% weapon damage. Hammer of the Ancients has a 1% increased Critical Hit Chance for every 5 Fury that ya have.",
-				"rune": "Critical Hits have a 10% chance to cause enemies to drop a health globe.",
+				"desc": "Call forth a massive hammer to smash enemies directly in front of you for <span class='skill-highlight'>535%</span> weapon damage. Hammer of the Ancients has a <span class='skill-highlight'>1%</span> increased Critical Hit Chance for every <span class='skill-highlight'>5</span> Fury that you have.",
+				"rune": "Each hit creates a tremor at the point of impact for <span class='skill-highlight'>2</span> seconds that Slows the movement speed of enemies by <span class='skill-highlight'>80%</span>",
 				"procRate": 0.667,
 				"effect": {
 					"cost-fury": 20,
@@ -715,10 +706,22 @@
 					"plus-critical-hit-this": 5
 				}
 			},
+			"hammer-of-the-ancients~d": {
+
+                    "name": "Hammer of the Ancients - Thunderstrike",
+                    "desc": "Call forth a massive hammer to smash enemies directly in front of you for <span class='skill-highlight'>535%</span> weapon damage. Hammer of the Ancients has a <span class='skill-highlight'>1%</span> increased Critical Hit Chance for every <span class='skill-highlight'>5</span> Fury that you have.",
+                    "rune": "When you kill an enemy with Hammer of the Ancients, other enemies within <span class='skill-highlight'>10</span> yards are Stunned for <span class='skill-highlight'>2</span> seconds.",
+                    "procRate": 0.667,
+                    "effect": {
+                        "cost-fury": 20,
+                        "weapon-damage": 535,
+                        "plus-critical-hit-this": 5
+				}
+			},
 			"hammer-of-the-ancients~e": {
-				"name": "Hammer of the Ancients - Thunderstrike",
-				"desc": "Call forth a massive hammer to smash enemies directly in front of you for 535% weapon damage. Hammer of the Ancients has a 1% increased Critical Hit Chance for every 5 Fury that ya have.",
-				"rune": "When you kill an enemy with Hammer of the Ancients, other enemies within 10 yards are Stunned for 2 seconds.",
+				"name": "Hammer of the Ancients - Birthright",
+				"desc": "Call forth a massive hammer to smash enemies directly in front of you for <span class='skill-highlight'>535%</span> weapon damage. Hammer of the Ancients has a <span class='skill-highlight'>1%</span> increased Critical Hit Chance for every <span class='skill-highlight'>5</span> Fury that you have.",
+				"rune": "Critical Hits have a <span class='skill-highlight'>10%</span> chance to cause enemies to drop a health globe.",
 				"procRate": 0.667,
 				"effect": {
 					"cost-fury": 20,
@@ -728,7 +731,7 @@
 			},
 			"cleave": {
 				"name": "Cleave",
-				"desc": "Swing your weapon in a wide arc to deal 150% weapon damage to all enemies caught in the swing.",
+				"desc": "Swing your weapon in a wide arc to deal <span class='skill-highlight'>150%</span> weapon damage to all enemies caught in the swing.",
 				"procRate": 0.8,
 				"effect": {
 					"generate-fury": 5,
@@ -736,29 +739,29 @@
 				}
 			},
 			"cleave~a": {
-				"name": "Cleave - Broad Sweep",
-				"desc": "Swing your weapon in a wide arc to deal 150% weapon damage to all enemies caught in the swing.",
-				"rune": "Increase damage to 210% weapon damage as Lightning.",
-				"procRate": 0.8,
-				"effect": {
-					"generate-fury": 5,
-					"weapon-damage": 210
-				}
-			},
-			"cleave~b": {
-				"name": "Cleave - Gathering Storm",
-				"desc": "Swing your weapon in a wide arc to deal 150% weapon damage to all enemies caught in the swing.",
-				"rune": "Enemies cleaved have their movement speed reduced by 80% for 1 second.",
-				"procRate": 0.8,
+                "name": "Cleave - Rupture",
+				"desc": "Swing your weapon in a wide arc to deal <span class='skill-highlight'>150%</span> weapon damage to all enemies caught in the swing.",
+				"rune": "Enemies slain by Cleave explode, causing <span class='skill-highlight'>160%</span> weapon damage as Fire to all other enemies within <span class='skill-highlight'>8</span> yards.",
+				"procRate": 0.667,
 				"effect": {
 					"generate-fury": 5,
 					"weapon-damage": 150
 				}
 			},
+			"cleave~b": {
+                "name": "Cleave - Reaping Swing",
+				"desc": "Swing your weapon in a wide arc to deal <span class='skill-highlight'>150%</span> weapon damage to all enemies caught in the swing.",
+				"rune": "Generate <span class='skill-highlight'>1</span> additional Fury per enemy hit.",
+				"procRate": 0.8,
+				"effect": {
+					"generate-fury": 6,
+					"weapon-damage": 150
+				}
+			},
 			"cleave~c": {
 				"name": "Cleave - Scattering Blast",
-				"desc": "Swing your weapon in a wide arc to deal 150% weapon damage to all enemies caught in the swing.",
-				"rune": "On Critical Hits, knock enemies back 10 yards and deal 80% weapon damage to enemies where they land.",
+				"desc": "Swing your weapon in a wide arc to deal <span class='skill-highlight'>150%</span> weapon damage to all enemies caught in the swing.",
+				"rune": "On Critical Hits, knock enemies back <span class='skill-highlight'>10</span> yards and deal <span class='skill-highlight'>80%</span> weapon damage to enemies where they land.",
 				"procRate": 0.667,
 				"effect": {
 					"generate-fury": 5,
@@ -766,20 +769,20 @@
 				}
 			},
 			"cleave~d": {
-				"name": "Cleave - Reaping Swing",
-				"desc": "Swing your weapon in a wide arc to deal 150% weapon damage to all enemies caught in the swing.",
-				"rune": "Generate 1 additional Fury per enemy hit.",
+                "name": "Cleave - Broad Sweep",
+				"desc": "Swing your weapon in a wide arc to deal <span class='skill-highlight'>150%</span> weapon damage to all enemies caught in the swing.",
+				"rune": "Increase damage to <span class='skill-highlight'>210%</span> weapon damage as Lightning.",
 				"procRate": 0.8,
 				"effect": {
-					"generate-fury": 6,
-					"weapon-damage": 150
+					"generate-fury": 5,
+					"weapon-damage": 210
 				}
 			},
 			"cleave~e": {
-				"name": "Cleave - Rupture",
-				"desc": "Swing your weapon in a wide arc to deal 150% weapon damage to all enemies caught in the swing.",
-				"rune": "Enemies slain by Cleave explode, causing 160% weapon damage as Fire to all other enemies within 8 yards.",
-				"procRate": 0.667,
+				"name": "Cleave - Gathering Storm",
+				"desc": "Swing your weapon in a wide arc to deal <span class='skill-highlight'>150%</span> weapon damage to all enemies caught in the swing.",
+				"rune": "Enemies cleaved have their movement speed reduced by <span class='skill-highlight'>80%</span> for <span class='skill-highlight'>1</span> second.",
+				"procRate": 0.8,
 				"effect": {
 					"generate-fury": 5,
 					"weapon-damage": 150
@@ -787,7 +790,7 @@
 			},
 			"ground-stomp": {
 				"name": "Ground Stomp",
-				"desc": "Smash the ground, stunning all enemies within 14 yards for 4 seconds.",
+				"desc": "Smash the ground, stunning all enemies within <span class='skill-highlight'>14</span> yards for <span class='skill-highlight'>4</span> seconds.",
 				"procRate": 25,
 				"effect": {
 					"generate-fury": 15,
@@ -795,20 +798,19 @@
 				}
 			},
 			"ground-stomp~a": {
-				"name": "Ground Stomp - Trembling Stomp",
-				"desc": "Smash the ground, stunning all enemies within 14 yards for 4 seconds.",
-				"rune": "Enemies in the area also take 575% weapon damage as Fire.",
-				"procRate": 0.2,
+                "name": "Ground Stomp - Deafening Crash",
+				"desc": "Smash the ground, stunning all enemies within <span class='skill-highlight'>14</span> yards for <span class='skill-highlight'>4</span> seconds.",
+				"rune": "Enemies in the area have their movement speed slowed by <span class='skill-highlight'>80%</span> for <span class='skill-highlight'>8</span> seconds after they recover from being stunned.",
+				"procRate": 25,
 				"effect": {
 					"generate-fury": 15,
-					"cooldown": 12,
-					"weapon-damage": 575
+					"cooldown": 12
 				}
 			},
 			"ground-stomp~b": {
 				"name": "Ground Stomp - Wrenching Smash",
-				"desc": "Smash the ground, stunning all enemies within 14 yards for 4 seconds.",
-				"rune": "Increase the area of effect to 24 yards. Enemies are pulled closer before the strike lands.",
+				"desc": "Smash the ground, stunning all enemies within <span class='skill-highlight'>14</span> yards for <span class='skill-highlight'>4</span> seconds.",
+				"rune": "Increase the area of effect to <span class='skill-highlight'>24</span> yards. Enemies are pulled closer before the strike lands.",
 				"procRate": 25,
 				"effect": {
 					"generate-fury": 15,
@@ -816,19 +818,20 @@
 				}
 			},
 			"ground-stomp~c": {
-				"name": "Ground Stomp - Jarring Slam",
-				"desc": "Smash the ground, stunning all enemies within 14 yards for 4 seconds.",
-				"rune": "Enemies hit have a 10% chance to drop a health globe.",
-				"procRate": 25,
+                "name": "Ground Stomp - Trembling Stomp",
+				"desc": "Smash the ground, stunning all enemies within <span class='skill-highlight'>14</span> yards for <span class='skill-highlight'>4</span> seconds.",
+				"rune": "Enemies in the area also take <span class='skill-highlight'>575%</span> weapon damage as Fire.",
+				"procRate": 0.2,
 				"effect": {
 					"generate-fury": 15,
-					"cooldown": 12
+					"cooldown": 12,
+					"weapon-damage": 575
 				}
 			},
 			"ground-stomp~d": {
 				"name": "Ground Stomp - Foot of the Mountain",
-				"desc": "Smash the ground, stunning all enemies within 14 yards for 4 seconds.",
-				"rune": "Increase Fury gained to 30.",
+				"desc": "Smash the ground, stunning all enemies within <span class='skill-highlight'>14</span> yards for <span class='skill-highlight'>4</span> seconds.",
+				"rune": "Increase Fury gained to <span class='skill-highlight'>30</span>.",
 				"procRate": 25,
 				"effect": {
 					"cooldown": 12,
@@ -836,9 +839,9 @@
 				}
 			},
 			"ground-stomp~e": {
-				"name": "Ground Stomp - Deafening Crash",
-				"desc": "Smash the ground, stunning all enemies within 14 yards for 4 seconds.",
-				"rune": "Enemies in the area have their movement speed slowed by 80% for 8 seconds after they recover from being stunned.",
+				"name": "Ground Stomp - Jarring Slam",
+				"desc": "Smash the ground, stunning all enemies within <span class='skill-highlight'>14</span> yards for <span class='skill-highlight'>4</span> seconds.",
+				"rune": "Enemies hit have a <span class='skill-highlight'>10%</span> chance to drop a health globe.",
 				"procRate": 25,
 				"effect": {
 					"generate-fury": 15,
